@@ -1,19 +1,19 @@
-import { Widget } from '@lumino/widgets';
+import { Widget } from "@lumino/widgets";
 
-import '@kitware/vtk.js/Rendering/Profiles/Geometry';
+import "@kitware/vtk.js/Rendering/Profiles/Geometry";
 
-import vtkActor from '@kitware/vtk.js/Rendering/Core/Actor';
-import vtkFullScreenRenderWindow from '@kitware/vtk.js/Rendering/Misc/FullScreenRenderWindow';
-import vtkMapper from '@kitware/vtk.js/Rendering/Core/Mapper';
-import vtkSphereSource from '@kitware/vtk.js/Filters/Sources/SphereSource';
+import vtkActor from "@kitware/vtk.js/Rendering/Core/Actor";
+import vtkFullScreenRenderWindow from "@kitware/vtk.js/Rendering/Misc/FullScreenRenderWindow";
+import vtkMapper from "@kitware/vtk.js/Rendering/Core/Mapper";
+import vtkSphereSource from "@kitware/vtk.js/Filters/Sources/SphereSource";
 
 export class VTKWidget extends Widget {
   constructor() {
     super();
-    this.id = 'vtk-widget';
-    this.title.label = 'VTK.js Viewer';
+    this.id = "vtk-widget";
+    this.title.label = "VTK.js Viewer";
     this.title.closable = true;
-    this.addClass('jp-vtkjsWidget');
+    this.addClass("jp-vtkjsWidget");
   }
 
   protected onAfterAttach(msg: any): void {
