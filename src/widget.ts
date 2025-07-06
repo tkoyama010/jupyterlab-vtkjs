@@ -24,7 +24,7 @@ export class VTKWidget extends Widget {
   private renderVTKScene(): void {
     const fullScreenRenderer = vtkFullScreenRenderWindow.newInstance({
       container: this.node,
-      background: [0.2, 0.3, 0.4]
+      background: [0.2, 0.3, 0.4],
     });
 
     const renderer = fullScreenRenderer.getRenderer();
@@ -34,7 +34,7 @@ export class VTKWidget extends Widget {
       center: [0, 0, 0],
       radius: 1.0,
       thetaResolution: 32,
-      phiResolution: 32
+      phiResolution: 32,
     });
 
     const mapper = vtkMapper.newInstance();

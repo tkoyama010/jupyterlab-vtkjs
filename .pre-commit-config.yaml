@@ -9,5 +9,55 @@ repos:
     rev: v3.1.0
     hooks:
       - id: prettier
-        types_or: [javascript, jsx, ts, tsx, json, yaml, markdown, html, css, scss, less]
-        args: ["--write", "--print-width", "80", "--tab-width", "2", "--use-tabs", "false", "--semi", "true", "--single-quote", "true", "--quote-props", "as-needed", "--jsx-single-quote", "false", "--trailing-comma", "es5", "--bracket-spacing", "true", "--jsx-bracket-same-line", "false", "--arrow-parens", "always", "--prose-wrap", "preserve", "--html-whitespace-sensitivity", "css", "--vue-indent-script-and-style", "false", "--end-of-line", "lf", "--embedded-language-formatting", "auto", "--single-attribute-per-line", "false"]
+        types_or:
+          [
+            javascript,
+            jsx,
+            ts,
+            tsx,
+            json,
+            yaml,
+            markdown,
+            html,
+            css,
+            scss,
+            less,
+          ]
+        args:
+          [
+            '--write',
+            '--print-width',
+            '80',
+            '--tab-width',
+            '2',
+            '--use-tabs',
+            'false',
+            '--semi',
+            'true',
+            '--single-quote',
+            'true',
+            '--quote-props',
+            'as-needed',
+            '--jsx-single-quote',
+            'false',
+            '--trailing-comma',
+            'es5',
+            '--bracket-spacing',
+            'true',
+            '--jsx-bracket-same-line',
+            'false',
+            '--arrow-parens',
+            'always',
+            '--prose-wrap',
+            'preserve',
+            '--html-whitespace-sensitivity',
+            'css',
+            '--vue-indent-script-and-style',
+            'false',
+            '--end-of-line',
+            'lf',
+            '--embedded-language-formatting',
+            'auto',
+            '--single-attribute-per-line',
+            'false',
+          ]

@@ -4,9 +4,9 @@ This extension adds a custom button to the JupyterLab launcher. Clicking the but
 
 ## Features
 
-* Adds a **VTK.js Viewer** button to the launcher screen
-* Opens a resizable, closable panel displaying a 3D-rendered sphere
-* Uses WebGL through `vtk.js`
+- Adds a **VTK.js Viewer** button to the launcher screen
+- Opens a resizable, closable panel displaying a 3D-rendered sphere
+- Uses WebGL through `vtk.js`
 
 ## Installation
 
@@ -39,21 +39,21 @@ jupyter labextension install .
 
 ## How It Works
 
-* On activation, the extension registers a command `vtkjs:open`.
-* This command creates a new `Lumino` widget, adds it to the main area, and renders a VTK.js scene.
-* The launcher entry is categorized under `Other` and is labeled `VTK.js Viewer`.
+- On activation, the extension registers a command `vtkjs:open`.
+- This command creates a new `Lumino` widget, adds it to the main area, and renders a VTK.js scene.
+- The launcher entry is categorized under `Other` and is labeled `VTK.js Viewer`.
 
 ## Technical Stack
 
-* **JupyterLab Extension API** (TypeScript)
-* **Lumino Widgets** for UI containers
-* **VTK.js** for 3D rendering
+- **JupyterLab Extension API** (TypeScript)
+- **Lumino Widgets** for UI containers
+- **VTK.js** for 3D rendering
 
 ## Next Steps (Optional Enhancements)
 
-* File loader to import `.vtp`, `.vtk` data
-* React or custom widgets for camera and rendering control
-* Toolbar or sidebar integration for additional controls
+- File loader to import `.vtp`, `.vtk` data
+- React or custom widgets for camera and rendering control
+- Toolbar or sidebar integration for additional controls
 
 ---
 
