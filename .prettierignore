@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+lib/
+dist/
+build/
+*.tsbuildinfo
+
+# Python virtual environment
+.venv/
+venv/
+.env/
+env/
+
+# Test coverage
+coverage/
+
+# Generated files
+jupyterlab_vtkjs/
+*.d.ts
+
+# Jupyter lab extension files
+.jupyter/
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
