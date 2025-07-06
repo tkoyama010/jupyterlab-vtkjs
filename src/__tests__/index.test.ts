@@ -18,7 +18,9 @@ describe('JupyterLab VTKjs Plugin', () => {
 
   it('should have correct plugin metadata', () => {
     expect(plugin.id).toBe('jupyterlab-vtkjs:plugin');
-    expect(plugin.description).toBe('A JupyterLab extension that adds VTK.js viewer');
+    expect(plugin.description).toBe(
+      'A JupyterLab extension that adds VTK.js viewer'
+    );
     expect(plugin.autoStart).toBe(true);
     expect(plugin.optional).toBeDefined();
   });
@@ -43,16 +45,18 @@ describe('JupyterLab VTKjs Plugin', () => {
     };
 
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-    
+
     plugin.activate(app, launcher);
 
-    expect(consoleSpy).toHaveBeenCalledWith('JupyterLab extension jupyterlab-vtkjs is activated!');
+    expect(consoleSpy).toHaveBeenCalledWith(
+      'JupyterLab extension jupyterlab-vtkjs is activated!'
+    );
     expect(commands.addCommand).toHaveBeenCalledWith('vtkjs:open', {
       label: 'VTK.js Viewer',
       caption: 'Open VTK.js 3D Viewer',
       execute: expect.any(Function),
     });
-    
+
     consoleSpy.mockRestore();
   });
 

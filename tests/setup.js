@@ -22,8 +22,8 @@ if (typeof global.ResizeObserver === 'undefined') {
 // Mock WebGL context for VTK.js
 if (typeof global.WebGLRenderingContext === 'undefined') {
   global.WebGLRenderingContext = {
-    VERTEX_SHADER: 0x8B31,
-    FRAGMENT_SHADER: 0x8B30,
+    VERTEX_SHADER: 0x8b31,
+    FRAGMENT_SHADER: 0x8b30,
   };
 }
 
