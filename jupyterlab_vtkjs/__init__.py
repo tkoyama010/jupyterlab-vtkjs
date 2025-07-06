@@ -7,16 +7,20 @@ from .handlers import setup_handlers
 
 
 def _jupyter_labextension_paths():
-    return [{
-        "src": "labextension",
-        "dest": "jupyterlab-vtkjs"
-    }]
+    return [
+        {
+            "src": "labextension",
+            "dest": "jupyterlab-vtkjs",
+        }
+    ]
 
 
 def _jupyter_server_extension_points():
-    return [{
-        "module": "jupyterlab_vtkjs"
-    }]
+    return [
+        {
+            "module": "jupyterlab_vtkjs",
+        }
+    ]
 
 
 def _load_jupyter_server_extension(server_app):
