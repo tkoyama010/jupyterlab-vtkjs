@@ -1,8 +1,8 @@
 // Setup DOM APIs that might be missing in the test environment
-require('jest-environment-jsdom');
+require("jest-environment-jsdom");
 
 // Mock DragEvent if not available
-if (typeof global.DragEvent === 'undefined') {
+if (typeof global.DragEvent === "undefined") {
   global.DragEvent = class DragEvent extends Event {
     constructor(type, eventInitDict) {
       super(type, eventInitDict);
@@ -11,7 +11,7 @@ if (typeof global.DragEvent === 'undefined') {
 }
 
 // Mock other missing DOM APIs
-if (typeof global.ResizeObserver === 'undefined') {
+if (typeof global.ResizeObserver === "undefined") {
   global.ResizeObserver = jest.fn().mockImplementation(() => ({
     observe: jest.fn(),
     unobserve: jest.fn(),
@@ -20,7 +20,7 @@ if (typeof global.ResizeObserver === 'undefined') {
 }
 
 // Mock WebGL context for VTK.js
-if (typeof global.WebGLRenderingContext === 'undefined') {
+if (typeof global.WebGLRenderingContext === "undefined") {
   global.WebGLRenderingContext = {
     VERTEX_SHADER: 0x8b31,
     FRAGMENT_SHADER: 0x8b30,

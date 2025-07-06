@@ -22,5 +22,5 @@
     "lib": ["es2018", "dom", "esnext.intl"],
     "skipLibCheck": true
   },
-  "include": ["src/*"]
+  "include": ["src/**/*"]
 }
