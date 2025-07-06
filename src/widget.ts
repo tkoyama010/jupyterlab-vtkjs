@@ -1,4 +1,5 @@
-import { Widget } from '@lumino/widgets';
+import { Widget } from "@lumino/widgets";
+import { Message } from "@lumino/messaging";
 
 import '@kitware/vtk.js/Rendering/Profiles/Geometry';
 
@@ -16,7 +17,7 @@ export class VTKWidget extends Widget {
     this.addClass('jp-vtkjsWidget');
   }
 
-  protected onAfterAttach(msg: any): void {
+  protected onAfterAttach(msg: Message): void {
     super.onAfterAttach(msg);
     this.renderVTKScene();
   }
