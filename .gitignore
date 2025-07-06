@@ -7,6 +7,12 @@ node_modules/
 jupyterlab_vtkjs/labextension
 yarn-error.log
 
+# Coverage directory used by jest
+coverage/
+
+# ESLint cache
+.eslintcache
+
 # Integration tests
 ui-tests/test-results/
 ui-tests/playwright-report/
