@@ -1,5 +1,5 @@
-import { Widget } from "@lumino/widgets";
-import { Message } from "@lumino/messaging";
+import { Widget } from '@lumino/widgets';
+import { Message } from '@lumino/messaging';
 
 import '@kitware/vtk.js/Rendering/Profiles/Geometry';
 
