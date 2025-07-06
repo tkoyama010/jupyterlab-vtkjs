@@ -1,6 +1,6 @@
 import {
   JupyterFrontEnd,
-  JupyterFrontEndPlugin
+  JupyterFrontEndPlugin,
 } from '@jupyterlab/application';
 
 import { ILauncher } from '@jupyterlab/launcher';
@@ -25,17 +25,17 @@ const plugin: JupyterFrontEndPlugin<void> = {
       execute: () => {
         const widget = new VTKWidget();
         shell.add(widget, 'main');
-      }
+      },
     });
 
     if (launcher) {
       launcher.add({
         command: COMMAND_ID,
         category: 'Other',
-        rank: 0
+        rank: 0,
       });
     }
-  }
+  },
 };
 
 export default plugin;
